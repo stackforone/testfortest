@@ -1,0 +1,231 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: white;
+}
+
+/* Header Section */
+.header {
+    padding: 20px;
+    background: linear-gradient(45deg, #2e7d29, #00b167, #00c44f);
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.user-info {
+    padding-top: 10px;
+}
+
+/* Content Section for Profile Page */
+.content {
+    background-color: #1A1A1A;
+    padding: 20px 15px;
+    margin: -20px auto 0 auto; /* ปรับ margin-top ให้กล่องทับส่วนบนเล็กน้อย */
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8); /* เงาสีดำ */
+    max-width: 90%; /* กำหนดขนาดเพื่อให้อยู่ในหน้าจอ */
+    position: relative; /* ใช้ relative แทน absolute */
+    z-index: 2;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 19px;
+    background-color: #222;
+    color: #ffffff; /* สีไอคอน */
+    padding: 15px;
+    border-radius: 50%; /* วงกลมรอบไอคอน */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    font-size: 11px;
+    margin: 0;
+}
+
+.status {
+    font-size: 12px;
+    color: #ff6666;
+}
+
+.status1 {
+    font-size: 12px;
+    color: #3CB371;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bottom-nav a {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.bottom-nav a i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bottom-nav a.active {
+    color: #00FF00;
+}
+
+.bottom-nav a {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bottom-nav a:focus {
+    outline: none;
+}
+
+/* Coin Card for Contracts or Deposit Pages */
+.coin-card {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coin-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.coin-info p {
+    margin: 0;
+    color: white;
+}
+
+.coin-card button {
+    background-color: #00b36b;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Top Actions for Homepage or Main Menu */
+.top-actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.action {
+    background-color: #1A1A1A;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    width: 30%;
+    color: white;
+}
+
+/* Tab Navigation for Home */
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab {
+    background-color: #00b36b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #00FF00;
+}
+
+/* Crypto List for Cryptocurrency Page */
+.crypto-list {
+    padding: 0 15px;
+}
+
+.crypto-item {
+    background-color: #1A1A1A;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crypto-info {
+    display: flex;
+    align-items: center;
+}
+
+.crypto-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.crypto-graph {
+    text-align: right;
+}
+
+.crypto-graph img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.flag-icon {
+    position: absolute; /* ทำให้รูปอยู่ในตำแหน่งที่เกี่ยวข้องกับ parent container */
+    top: 17px; /* ปรับระยะห่างจากด้านบน */
+    right: 13px; /* ปรับระยะห่างจากด้านขวา */
+    width: 30px; /* ขนาดของรูปภาพ */
+    height: 30px; /* ขนาดของรูปภาพ */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    overflow: hidden; /* ซ่อนส่วนเกิน */
+    object-fit: cover; /* ปรับรูปให้เข้ากับ container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเพื่อให้ดูสวยงาม */
+    z-index: 10; /* ให้ธงอยู่ด้านบนของเนื้อหาอื่นๆ */
+}
